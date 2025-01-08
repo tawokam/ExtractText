@@ -1,0 +1,59 @@
+unit ExtractText;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Ocr, ExtDlgs, XPMan, ComCtrls, ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+function searchString(FileName : String; Chaine : String) : Boolean;
+var Ocr : TOcr;
+begin
+  Ocr := TOCR.Create(nil);
+  Ocr.PictureFileName := FileName;
+  Ocr.PictureLeft := 0;
+  Ocr.PictureTop := 0;
+  Ocr.PictureWidth := 0;
+  Ocr.PictureHeight := 0;
+end;
+
+procedure ExtractAndShowTextFromImage(const ImagePath: string);
+var
+Ocr: TOCR;
+ExtractedText: string;
+begin
+Ocr := TOCR.Create(nil);
+try
+Ocr.DataPath := ExtractFilePath(ParamStr(0)) + 'tessdata';
+//Ocr.Language := 'eng';
+Ocr.PictureFileName := ImagePath;
+Ocr.Active := True;
+ExtractedText := Ocr.Text;
+ShowMessage(ExtractedText);
+finally
+Ocr.Free;
+end;
+end;
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  ExtractAndShowTextFromImage('C:\Program Files (x86)\Luxand\FaceSDK 8.2.0\demo\IMG3.jpg');
+end;
+
+end.

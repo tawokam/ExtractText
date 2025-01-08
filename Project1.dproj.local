@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/11/28 15:47:44.000.533,=C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2024/11/28 15:51:43.000.918,C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Unit1.pas=C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\similarityFaces.pas</Transaction>
+    <Transaction>2024/11/28 15:51:43.000.918,C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Unit1.dfm=C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\similarityFaces.dfm</Transaction>
+    <Transaction>2024/11/28 15:53:34.000.187,C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Project1.dproj=C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Project1.dproj</Transaction>
+    <Transaction>2024/12/05 12:03:31.000.482,=C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2024/12/05 12:05:29.000.451,C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\ExtractText.dfm=C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Unit1.dfm</Transaction>
+    <Transaction>2024/12/05 12:05:29.000.451,C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\ExtractText.pas=C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2024/12/05 12:05:32.000.946,C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Project1.dproj=C:\Users\Further Market\Documents\Embarcadero\Studio\Projets\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
